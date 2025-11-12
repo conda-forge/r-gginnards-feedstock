@@ -1,4 +1,4 @@
-{% set version = "0.2.0-1" %}
+{% set version = "0.2.0-2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gginnards_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gginnards/gginnards_{{ version }}.tar.gz
-  sha256: 83a66db01d94f50004a188db35da274eb9ffda737f1eff11e57bbd8b306c5d18
+  sha256: 96036b7167460a0e4b01904bfbcdf1f901f85de85062d0de5764b586f3c8d8f0
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
